@@ -13,9 +13,5 @@ def generate_list(n, l, r):
 
 if __name__ == '__main__':
     test_list = generate_list(1000, 1, 1000)
-    t0 = time.time()
+    # selection_sort(test_list)
     insert_sort(test_list)
-    print(time.time() - t0)
-    t1 = time.time() -t0
-    selection_sort(test_list)
-    print(time.time() - t1 - t0)
