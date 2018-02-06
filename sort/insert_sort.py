@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 __author__ = 'Albino'
 
+from .clock import computed_time
 
+
+@computed_time
 def insert_sort(list):
     """
     插入排序
