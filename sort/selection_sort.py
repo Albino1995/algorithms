@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 __author__ = 'Albino'
 
-from .clock import computed_time
+from sort.clock import computed_time
 
 
 @computed_time
-def selection_sort(list):
+def SelectionSort(list):
     """
     选择排序
     """
