@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 __author__ = 'Albino'
 
-from .clock import computed_time
+from sort.clock import computed_time
 
 
 @computed_time
-def insertion_sort(list):
+def InsertionSort(list):
     """
     插入排序
     """
