@@ -8,10 +8,13 @@ from sort.clock import computed_time
 def MergeSort(list):
     if len(list) <= 1:
         return list
-    num = int(len(list) / 2)
+    mid = int(len(list) / 2)
     # 归并
-    left = MergeSort(list[:num])
-    right = MergeSort(list[num:])
+    left = MergeSort(list[:mid])
+    right = MergeSort(list[mid:])
+    # 数组接近有序时的优化
+    if left[-1] <= right[0]:
+        return left + right
     return Merge(left, right)
 
 
