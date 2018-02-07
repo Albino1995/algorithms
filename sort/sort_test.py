@@ -3,9 +3,10 @@ __author__ = 'Albino'
 
 import random
 
-from sort.insertion_sort import insertion_sort
-from sort.selection_sort import selection_sort
-from sort.bubble_sort import bubble_sort
+from sort.insertion_sort import InsertionSort
+from sort.selection_sort import SelectionSort
+from sort.bubble_sort import BubbleSort
+from sort.merge_sort import MergeSort
 
 
 def generate_list(n, l, r):
@@ -14,6 +15,7 @@ def generate_list(n, l, r):
 
 if __name__ == '__main__':
     test_list = generate_list(1000, 1, 1000)
-    # selection_sort(test_list)
-    # insertion_sort(test_list)
-    bubble_sort(test_list)
+    # SelectionSort(test_list)
+    # InsertionSort(test_list)
+    # BubbleSort(test_list)
+    MergeSort(test_list)
