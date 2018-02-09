@@ -6,6 +6,9 @@ from sort.clock import computed_time
 
 @computed_time
 def BubbleSort(list):
+    """
+    冒泡排序
+    """
     for i in range(len(list) - 1):
         # 内层循环中后i个数已经有序
         for j in range(len(list) - 1 - i):
