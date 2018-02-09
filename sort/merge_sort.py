@@ -6,6 +6,9 @@ from sort.clock import computed_time
 
 @computed_time
 def MergeSort(list):
+    """
+    归并排序
+    """
     if len(list) <= 1:
         return list
     mid = int(len(list) / 2)
