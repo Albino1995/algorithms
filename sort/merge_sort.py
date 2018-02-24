@@ -26,7 +26,7 @@ def Merge(left, right):
     result = []
     # 排序
     while l < len(left) and r < len(right):
-        if left[l] < right[r]:
+        if left[l] <= right[r]:
             result.append(left[l])
             l += 1
         else:
