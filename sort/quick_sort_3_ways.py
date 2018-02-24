@@ -31,5 +31,3 @@ def QuickSort3Ways(list, l, r):
     QuickSort3Ways(list, l, lt - 1)
     QuickSort3Ways(list, gt, r)
     return list
-
-print(QuickSort3Ways([1, 50, 2, 432, 3], 0, 4))
