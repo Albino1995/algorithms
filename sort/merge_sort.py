@@ -11,7 +11,7 @@ def MergeSort(list):
     """
     if len(list) <= 1:
         return list
-    mid = int(len(list) / 2)
+    mid = int(len(list) // 2)
     # 归并
     left = MergeSort(list[:mid])
     right = MergeSort(list[mid:])
