@@ -22,21 +22,6 @@ def BinarySearch(list, n, target):
     return -1
 
 
-def binSearch(lst, item):
-  mid = len(lst) //2
-  if lst[mid] ==item:
-    return item
-  if mid == 0:
-    #mid等于0就是找到最后一个元素了。
-    found = False
-    return found
-  else:
-     if item > lst[mid]: #找后半部分
-       return binSearch(lst[mid:], item)
-     else:
-       return binSearch(lst[:mid], item) #找前半部分
-
-
 def BinarySearch2(list, l, r, target):
     """
     递归版本二分查找
